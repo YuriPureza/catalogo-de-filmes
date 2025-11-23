@@ -34,4 +34,4 @@ Um catálogo de filmes simples desenvolvido com HTML, CSS (Bootstrap) e JavaScri
 
 ## Screenshot
 
-![websiteScreenshot](./assets/website%20screenshot.png)
+![websiteScreenshot](./assets/website_screenshot.png)
