@@ -1,6 +1,6 @@
-const API_KEY = 'dbeb46854159cf7bfc9abd0754707431'; // Colocar chave Api
+const API_KEY = 'SUA_CHAVE_API_AQUI'; // Colocar chave Api
 
-// Carregar detalhes do filme
+// Carrega os detalhes do filme
 async function loadMovieDetails() {
     const movieId = localStorage.getItem('selectedMovie');
 
@@ -94,13 +94,13 @@ async function loadMovieDetails() {
     }
 }
 
-// Verificar se filme é favorito
+// Verifica se filme é favorito
 function isFavorite(movieId) {
     const favorites = JSON.parse(localStorage.getItem('favoriteMovies') || '[]');
     return favorites.includes(movieId);
 }
 
-// Alternar favorito
+// Alterna favorito
 function toggleFavorite(movieId) {
     const favorites = JSON.parse(localStorage.getItem('favoriteMovies') || '[]');
     const index = favorites.indexOf(movieId);
@@ -114,10 +114,10 @@ function toggleFavorite(movieId) {
     }
 
     localStorage.setItem('favoriteMovies', JSON.stringify(favorites));
-    loadMovieDetails(); // Recarrega a página para atualizar o botão
+    loadMovieDetails();
 }
 
-// Carregar os detalhes quando a página for aberta
+// Carrega os detalhes quando a página for aberta
 document.addEventListener('DOMContentLoaded', loadMovieDetails);
 
 function getCurrentYear() {

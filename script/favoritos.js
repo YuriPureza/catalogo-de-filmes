@@ -1,6 +1,6 @@
-const API_KEY = 'dbeb46854159cf7bfc9abd0754707431'; // Colocar chave Api
+const API_KEY = 'SUA_CHAVE_API_AQUI'; // Colocar chave Api
 
-// Carregar filmes favoritos
+// Carrega os filmes favoritos
 async function loadFavorites() {
     const favorites = JSON.parse(localStorage.getItem('favoriteMovies') || '[]');
 
@@ -58,7 +58,7 @@ async function loadFavorites() {
     }
 }
 
-// Remover dos favoritos
+// Remove dos favoritos
 function removeFavorite(movieId) {
     const favorites = JSON.parse(localStorage.getItem('favoriteMovies') || '[]');
     const index = favorites.indexOf(movieId);
@@ -67,7 +67,7 @@ function removeFavorite(movieId) {
         favorites.splice(index, 1);
         localStorage.setItem('favoriteMovies', JSON.stringify(favorites));
         alert('Filme removido dos favoritos!');
-        loadFavorites(); // Recarrega a lista
+        loadFavorites();
     }
 }
 
@@ -77,7 +77,7 @@ function viewDetails(movieId) {
     window.location.href = 'detalhes.html';
 }
 
-// Carregar os favoritos quando a página for aberta
+// Carrega os favoritos quando a página for aberta
 document.addEventListener('DOMContentLoaded', loadFavorites);
 
 function getCurrentYear() {

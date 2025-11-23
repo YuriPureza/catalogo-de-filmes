@@ -1,5 +1,5 @@
 // Variáveis globais
-const API_KEY = 'dbeb46854159cf7bfc9abd0754707431'; // Colocar chave Api
+const API_KEY = 'SUA_CHAVE_API_AQUI'; // Colocar chave Api
 //Pesquisei sobre .env para manter a segurança, porém, não dá para fazer a conexão utilizando somente html, css e javaScript
 let currentPage = 1;
 let totalPages = 1;
