@@ -1,4 +1,4 @@
-const API_KEY = 'cc4d99b241fd797ba458bdbc49684ee4'; // Colocar chave Api
+const API_KEY = 'dbeb46854159cf7bfc9abd0754707431'; // Colocar chave Api
 
 // Carregar detalhes do filme
 async function loadMovieDetails() {
